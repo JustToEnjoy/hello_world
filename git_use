@@ -1,0 +1,32 @@
+1. go to http://github.com creat a account
+2. creat Repository and New respository
+3. add code lib owner, Respository name, Description and so on
+4. install Git clent
+	a. sudo apt-get install git
+	b. checking for existing SSH Keys
+	   ls -al ~/.sh
+	c. if no exist the SSH keys, generating a new SSH key
+	   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+	d. adding your SSH key to the ssh-agent
+	   1. http://github.com SSH Keys
+     	   2. click add keys
+           	a. title :ramdam
+		b. key: ~/.ssh/id_rsa.pub
+
+5. global setup
+	git config --global user.name "Your name"
+	git config --global user.name "Email name"
+6. next step
+ 	mkdir hello_world
+	cd hello_world
+	git init
+	touch git_use
+	git add git_use
+	git commit -m "first commit"
+	git remote add origin git@github.com:caidy18/hello_world.git
+	git push -u origin master
+		how to fix failed to push some refs to git
+		solution: merge the code and get the README.md
+			cmd: git pull --rebase origin master
+		
+		execute again:git push -u origin master
