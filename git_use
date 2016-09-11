@@ -28,5 +28,9 @@
 		how to fix failed to push some refs to git
 		solution: merge the code and get the README.md
 			cmd: git pull --rebase origin master
-		
+		how to fix Cannot rebase: You have unstaged changes (this means had changed file)
+		solution:git stash
+			 git pull --rebase origin master
+			 git push -u origin master
+			 git stash pop stast@{id}
 		execute again:git push -u origin master
